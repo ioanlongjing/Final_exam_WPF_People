@@ -34,8 +34,8 @@ namespace End_People
                                 };
 
 
-            //listbox_1.ItemsSource = people;
-            DataContext = Teacher;
+            Teacher_Name.ItemsSource = Teacher;
+            //DataContext = Teacher;
         }
     }
 }

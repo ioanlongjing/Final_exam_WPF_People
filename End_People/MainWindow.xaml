@@ -16,6 +16,7 @@
             </Border>
         </ControlTemplate>
 
+ <!--    
         <DataTemplate x:Key="Format_4_Data">
             <Border Margin="1" BorderBrush="Cyan" BorderThickness="3" CornerRadius="3">
 
@@ -30,7 +31,47 @@
 
             </Border>
         </DataTemplate>
+  -->
 
+        <DataTemplate x:Key="Format_4_Data">
+            <Border Margin="1" BorderBrush="Navy" BorderThickness="3" CornerRadius="3">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="40"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock FontWeight="Bold" Grid.Row="0" Grid.Column="0" Padding="2"
+                               Text="{Binding FirstName}"/>
+
+                    <Rectangle Grid.Row="0" Grid.Column="1" Grid.RowSpan="2"
+                               Fill="{Binding Color}"/>
+
+                </Grid>
+
+            </Border>
+        </DataTemplate>
+
+        <DataTemplate x:Key="From_To_Data">
+            <Border Margin="1" BorderBrush="Cyan" BorderThickness="3" CornerRadius="3">
+
+                <StackPanel DataContext="{ Binding ElementName=Teacher_Name, Path=SelectedItem }">
+                    <TextBlock FontWeight="Bold" Text="{Binding FirstName}"/>
+                    <TextBlock FontWeight="Bold" Text="{Binding Mail}"/>
+                    <TextBlock FontWeight="Bold" Text="{Binding Number}"/>
+                    <TextBlock FontWeight="Bold" Text="{Binding WebLink}"/>
+          
+                    <TextBlock Padding="2" 
+                               Text="{Binding Color}" 
+                               Foreground="{Binding Color}"/>
+                    <Rectangle Fill="{Binding Color}" Width="16" Height="17"/>
+                </StackPanel>
+
+            </Border>
+        </DataTemplate>
 
     </Window.Resources>
     
@@ -40,9 +81,9 @@
                  Template="{StaticResource My_List_Template}"
                  ItemTemplate="{StaticResource Format_4_Data}"
                  />
-  <!--     
-        <Label   Margin="10,10" 
+    
+        <Label   Margin="10,4" 
                  ContentTemplate="{StaticResource From_To_Data}"/>
-   -->    
+    
     </StackPanel>
 </Window>

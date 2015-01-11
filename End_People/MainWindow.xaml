@@ -5,21 +5,44 @@
 
     <Window.Resources>
 
-        <ControlTemplate x:Key="List_Bar">
-            <Border BorderBrush="Blue" BorderThickness="6" CornerRadius="5" Background="BurlyWood">
-                
+        <ControlTemplate x:Key="My_List_Template">
+            <Border BorderBrush="Blue" BorderThickness="5"
+                    CornerRadius="4" Background="BurlyWood" >
+
                 <TextBlock>
-                    <ItemsPresenter TextBlock.Foreground="Black"/>
+                   <ItemsPresenter TextBlock.Foreground="Black"/>
                 </TextBlock>
-                
+
             </Border>
         </ControlTemplate>
-        
+
+        <DataTemplate x:Key="Format_4_Data">
+            <Border Margin="1" BorderBrush="Cyan" BorderThickness="3" CornerRadius="3">
+
+                <StackPanel DataContext="{ Binding ElementName=Teacher_Name, Path=SelectedItem }">
+                    <TextBlock FontWeight="Bold" Text="{Binding FirstName}"/>
+  
+                    <TextBlock Padding="2" 
+                               Text="{Binding Color}" 
+                               Foreground="{Binding Color}"/>
+                    <Rectangle Fill="{Binding Color}" Width="16" Height="17"/>
+                </StackPanel>
+
+            </Border>
+        </DataTemplate>
+
+
     </Window.Resources>
     
     <StackPanel Orientation="Horizontal">
-        <ListBox SelectedIndex="0" Margin="4" Width="100" 
-                 Template="{StaticResource List_Bar}"/>
-        <Label Margin="10,10"/>
+        <ListBox Name="Teacher_Name"
+                 SelectedIndex="0" Margin="4" Width="100"
+                 Template="{StaticResource My_List_Template}"
+                 ItemTemplate="{StaticResource Format_4_Data}"
+                 />
+  <!--     
+        <Label   Margin="10,10" 
+                 ContentTemplate="{StaticResource From_To_Data}"/>
+   -->    
     </StackPanel>
 </Window>

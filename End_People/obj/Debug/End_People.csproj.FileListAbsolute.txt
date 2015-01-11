@@ -1,0 +1,13 @@
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\bin\Debug\End_People.exe.config
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\End_People.csprojResolveAssemblyReference.cache
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\MainWindow.baml
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\MainWindow.g.cs
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\App.g.cs
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\End_People_MarkupCompile.cache
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\End_People.g.resources
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\End_People.Properties.Resources.resources
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\End_People.csproj.GenerateResource.Cache
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\bin\Debug\End_People.exe
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\bin\Debug\End_People.pdb
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\End_People.exe
+c:\users\ioan\documents\visual studio 2013\Projects\End_People\End_People\obj\Debug\End_People.pdb
